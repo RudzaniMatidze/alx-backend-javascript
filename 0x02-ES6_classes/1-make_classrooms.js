@@ -5,5 +5,5 @@ export default function initializeRooms() {
   const class2 = new ClassRoom(20);
   const class3 = new ClassRoom(34);
   const newlist = [class1, class2, class3];
-  return (newlist)
+  return (newlist);
 }
