@@ -1,5 +1,5 @@
 export default class HolbertonCourse {
-  contructor(name, length, students) {
+  constructor(name, length, students) {
     if (typeof name !== 'string') throw new TypeError('name must be a string');
     if (!Number.isInteger(length)) throw new TypeError('length must be a number');
     if (!Array.isArray(students)) throw new TypeError('students type must be an Array');
