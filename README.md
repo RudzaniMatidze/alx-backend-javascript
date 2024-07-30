@@ -9,3 +9,4 @@ JavaScript is versatile and beginner-friendly. With more experience, you'll be a
 1. 0x00. ES6 Basics
 2. 0x01-ES6_promise
 3. 0x02-ES6_classes
+4. 0x03-ES6_data_manipulation
