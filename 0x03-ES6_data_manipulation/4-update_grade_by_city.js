@@ -1,3 +1,5 @@
+/* eslint-disable no-param-reassign */
+/* eslint-disable no-prototype-builtins */
 export default function updateStudentGradeByCity(students, city, newGrades) {
   const defaultGrade = { grade: 'N/A' };
 
