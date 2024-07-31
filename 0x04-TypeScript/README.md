@@ -7,6 +7,16 @@ For example, JavaScript provides language primitives like string and number, but
 
 This means that your existing working JavaScript code is also TypeScript code. The main benefit of TypeScript is that it can highlight unexpected behavior in your code, lowering the chance of bugs.
 
+### Configuration Files
++ `package.json`
++ `.eslintrc.js`
++ `tsconfig.json`
++ `webpack.config.js`
+
+### Install
++ `npm install --global yarn`
++ `yarn install`
+
 ## Tasks
 
 | File	 | Description |
@@ -37,6 +47,6 @@ This means that your existing working JavaScript code is also TypeScript code. T
       return rowId;
     }
     ```
-<br/>
+| --- | ---- |
 |  [task_3/js/interfaces.ts](task_3/js/interfaces.ts) | <ul><li> [task_3/js/crud.d.ts](task_3/js/crud.d.ts) is an ambient file that meets the following requirements:</li><li> - Export the type declarations for each crud function.</li><li> - At the top of the file, import `RowID` and `RowElement` from [task_3/js/interfaces.ts](task_3/js/interfaces.ts).</li><li> [task_3/js/main.ts](task_3/js/main.ts) contains a script that meets the following requirements:</li><li> - At the top of the file create a [triple slash directive](https://www.typescriptlang.org/docs/handbook/triple-slash-directives.html) that includes all the dependencies from [task_3/js/crud.d.ts](task_3/js/crud.d.ts).</li><li>  - Import the `RowID` type and `RowElement` from [task_3/js/interfaces.ts](task_3/js/interfaces.ts).</li><li> - Import everything from [task_3/js/crud.js](task_3/js/crud.js) as `CRUD`.</li><li> - Create an object called `row` with the type `RowElement` with the fields set to these values:</li><li> -- `firstName`: `Guillaume`.</li><li> -- `lastName`: `Salva`.</li><li> - Create a `const` variable named `newRowID` with the type `RowID` and assign it the value of the `insertRow` command.</li><li> - Next, create a `const` variable named `updatedRow` with the type `RowElement` and update `row` with an age field set to `23`.</li><li> - Finally, call the `updateRow` and `deleteRow` commands.</li></ul> |
 | 
